@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/logged/css/styles.css" />
+    <title>ecomycr™</title>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- Row -->
+      <div class="row">
+        <!-- Sign Up -->
+        <div class="col align-center flex-col sign-up">
+          <div class="form-wrapper align-center">     
+            
+            <form action=" {{url_for('.ventas_empresa')}} " method="post" class="form sign-up" >
+              <div class="input-group">
+                <i class="bx bxs-user"></i>
+                <input name="username" id='username' type="text" placeholder="#Codigo empresarial"/>
+              </div>
+              <div class="input-group">
+                <i class="bx bx-mail-send"></i>
+                <input type="email" placeholder="Correo Electronico" />
+              </div>
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input type="password" placeholder="Contrasena" />
+              </div>
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input type="password" placeholder="Confirmar contrase;a" />
+              </div>
+              <button type="submit">Crear cuenta</button>
+              <p>
+                <span style="font-size: .41cm;" >Ya tienes una cuenta?</span>
+                <b style="font-size: .49cm;" id="sign-in">Inicia Sesión</b>
+              </p>
+
+            </form>
+
+
+
+
+          </div>
+
+          <div class="form-wrapper">
+            <div class="social-list align-center sign-up">
+              <div class="align-center facebook-bg">
+                <i class="bx bxl-facebook"></i>
+              </div>
+              <div class="align-center google-bg">
+                <i class="bx bxl-google"></i>
+              </div>
+              <div class="align-center twitter-bg">
+                <i class="bx bxl-twitter"></i>
+              </div>
+              <div class="align-center insta-bg">
+                <i class="bx bxl-instagram-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Sign Up -->
+        <!-- Sign In -->
+        <div class="col align-center flex-col sign-in">
+          <div class="form-wrapper align-center">
+
+            <form  class="form sign-in" action="{{url_for('.empresa_perfil')}} " method="post">
+              <div>
+                <div class="input-group">
+                  <i class="bx bxs-user"></i>
+                  <input type="text" placeholder="Correo Electronico" />
+                </div>
+                <div class="input-group">
+                  <i class="bx bxs-lock-alt"></i>
+                  <input type="password" placeholder="Contrase;a" />
+                </div><button type="submit">Iniciar Sesion</button>
+                
+                
+                <p >
+                  <a href=" {{url_for('.forget')}} " style="font-size: .40cm; color: #000000; " ><b>
+                    Olvidaste tu contraseña?
+                  </b></a>
+                </p>
+
+                
+                <p>
+                  <span style="font-size: .41cm;"> No tienes una cuenta en ecomy“? </span>
+                  <b  style="font-size: .47cm;" id="sign-up">Crear Cuenta</b>
+                </p>
+              </div>
+
+            </form>
+            
+          </div>
+
+          <div class="form-wrapper">
+            <div class="social-list align-center sign-in">
+              <div class="align-center facebook-bg">
+                <i class="bx bxl-facebook"></i>
+              </div>
+              <div class="align-center google-bg">
+                <i class="bx bxl-google"></i>
+              </div>
+              <div class="align-center twitter-bg">
+                <i class="bx bxl-twitter"></i>
+              </div>
+              <div class="align-center insta-bg">
+                <i class="bx bxl-instagram-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Sign In -->
+      </div>
+      <!-- End Row -->
+      <!-- Content Section -->
+      <div class="row content-row">
+        <!-- Sign In Content -->
+        <div class="col align-items flex-col">
+          <div class="text sign-in">
+            <h2 class="singTitulo_ecomy"> Iniciar Sesión</h2>
+            <p class="titulo_ecomy">
+              Te saluda Socios ecomy™ es un gusto tenerte por aca.
+            </p>
+          </div>
+          <div class="img sign-in">
+            <img src="../static/logged/images/bg1.svg" alt="" />
+          </div>
+        </div>
+
+        <!-- Sign Up Content -->
+        <div  class="col align-items flex-col">
+          <div class="img sign-up">
+            <img src="../static/logged/images/bg2.svg" alt="" />
+          </div>
+          <div class="text sign-up">
+            <h2  > Crear Cuenta</h2>
+            <p  style="color: #f3f3f3">
+              Aumenta tus ventas con ecomy™
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Container -->
+
+    <!-- Script -->
+    <script src="../static/logged/js/index.js"></script>
+  </body>
+</html>

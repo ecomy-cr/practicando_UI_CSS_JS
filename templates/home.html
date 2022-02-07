@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="../static/home_ecomy/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="../static/home_ecomy/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="../static/home_ecomy/css/styles.css">
+
+        <title>ecomycr™ - 2022</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="../static/home_ecomy/img/logo.png" alt="" class="nav__logo-img"> 
+                    ecomycr™
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#productos" class="nav__link">Productos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href=" {{url_for('.log')}} " class="nav__link">Empresas</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href=" {{url_for('.marketplace')}} " class="nav__link">Marketplace</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="{{url_for('.atencion_al_cliente')}} " class="nav__link">Atencion al cliente</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+
+                    <img src="../static/home_ecomy/img/nav-light.png" alt="" class="nav__img">
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="../static/home_ecomy/img/home.png" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title" style="font-size: .7cm;" >Bienvenidos a ecomycr™</h1> 
+                        <h2 class="home__title" style="font-size: .482cm;" >¡El <b>mall virtual</b> de tu preferencia! </h2>
+                        
+                        <p class="home__description">
+                            EXPRESS COMPLETAMENTE GRATIS! <br>Variedad de productos para el hogar y familia
+                        </p>
+                        <a href=" {{url_for('marketplace')}} " class="button">Ir a Marketplace</a>
+                    </div>
+                </div>
+                <br>
+            </section>
+
+
+
+
+            <!--==================== GIVING ====================-->
+            <section class="giving section container">
+                <div >
+
+                    <h2 class="section__title">
+                        espacio para las promociones pagadas
+                    </h2>
+
+                </div>
+            </section>
+
+            <!--==================== CELEBRATE ====================-->
+            <section class="celebrate section container" id="celebrate">
+                <div class="celebrate__container grid">
+                    
+                    <div class="celebrate__data">
+                        <h2 style="font-size: .78cm;" class="section__title celebrate__title">
+                            Delivery 24/7<br> No tendras que salir de casa
+                        </h2>
+                        <p style="font-size: 0.49cm;" class="celebrate__description">
+                            Contamos con un registro de gran variedad de productos, electrodomesticos, comidas y mas. <br> Compra lo que necesites y pagas al recibir o directamente en nuestra aplicacion. <br> <b> Express gratis donde quiera que estes </b>(valido unicamente en las tiendas de tu ciudad).
+                        </p>
+
+                    <a href=" {{url_for('.tipo_phone') }} " class="button">Descargar aplicacion</a>
+                    </div>
+
+                        <img src="../static/home_ecomy/img/PNG.png" alt="" class="celebrate__img">
+
+                </div>
+            </section>
+
+            <!--==================== GIFT ====================-->
+            <section class="gift section container" id="productos">
+                <h2 class="section__title">Productos mas vendidos</h2>
+
+                <div class="gift__container grid">
+                    <article class="gift__card">
+                        <img src="../static/home_ecomy/img/gift1.png" alt="" class="gift__img">
+                        <i class='bx bx-heart gift__icon'></i>
+                        
+                        <h3 class="gift__price">₡1.500</h3>
+                        <span class="gift__title">Arroz Tio Pelon</span>
+                    </article>
+
+                    <article class="gift__card">
+                        <img src="../static/home_ecomy/img/gift2.png" alt="" class="gift__img">
+                        <i class='bx bx-heart gift__icon'></i>
+                        
+                        <h3 class="gift__price">₡2.530</h3>
+                        <span class="gift__title">Helados Dos Pinos Crema ship </span>
+                    </article>
+
+                    <article class="gift__card">
+                        <img src="../static/home_ecomy/img/gift3.png" alt="" class="gift__img">
+                        <i class='bx bx-heart gift__icon'></i>
+                        
+                        <h3 class="gift__price">₡10.000</h3>
+                        <span class="gift__title">Ceviche mixto</span>
+                    </article>
+
+                    <article class="gift__card">
+                        <img src="../static/home_ecomy/img/gift4.png" alt="" class="gift__img">
+                        <i class='bx bx-heart gift__icon'></i>
+                        
+                        <h3 class="gift__price">₡1.200</h3>
+                        <span class="gift__title">Coca Cola Retornable</span>
+                    </article>
+                    <br>
+            
+                    <a href=" {{url_for('.markett')}} " ><button class="button">Ver mas</button></a>
+                </div>
+                                
+            </section>
+
+            <!--==================== NEW ====================-->
+            <section class="new section container" id="empresas">
+
+                <div class="new__container">
+                    <div class="swiper new-swiper">
+                        <div class="swiper-wrapper">
+                            
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new4.png" alt="" class="new__img">
+                                <h3 class="new__price">SUPERMERCADOS</h3>
+
+                            </article>
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new4.png" alt="" class="new__img">
+                                <h3 class="new__price">BOUTIQUE</h3>
+
+                            </article>
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new4.png" alt="" class="new__img">
+                                <h3 class="new__price">MALL</h3>
+
+                            </article>
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new4.png" alt="" class="new__img">
+                                <h3 class="new__price">PULPERIA</h3>
+
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new4.png" alt="" class="new__img">
+                                <h3 class="new__price">FARMACIAS</h3>
+
+                            </article>
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new4.png" alt="" class="new__img">
+                                <h3 class="new__price">HELADERIAS</h3>
+
+                            </article>
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new4.png" alt="" class="new__img">
+                                <h3 class="new__price">JOYERIAS</h3>
+
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new1.png" alt="" class="new__img">
+                                <h3 class="new__price">CARNICERIAS</h3>
+                                
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new2.png" alt="" class="new__img">
+                                <h3 class="new__price">VERDURERIAS</h3>
+
+                                <button class="button new__button">
+                                    <i class='bx bx-heart new__icon'></i>
+                                </button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new3.png" alt="" class="new__img">
+                                <h3 class="new__price">REPUESTOS</h3>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new3.png" alt="" class="new__img">
+                                <h3 class="new__price">VEHICULOS</h3>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new4.png" alt="" class="new__img">
+                                <h3 class="new__price">PANADERIAS</h3>
+
+                            </article>
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new4.png" alt="" class="new__img">
+                                <h3 class="new__price">RESTAURANTES</h3>
+
+                            </article>
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new4.png" alt="" class="new__img">
+                                <h3 class="new__price">LICORERAS</h3>
+
+                            </article>
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new4.png" alt="" class="new__img">
+                                <h3 class="new__price">SODAS</h3>
+
+                            </article>
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new4.png" alt="" class="new__img">
+                                <h3 class="new__price">ZAPATERIAS</h3>
+
+                            </article>
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new4.png" alt="" class="new__img">
+                                <h3 class="new__price">JUGUETERIAS</h3>
+
+                            </article>
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new4.png" alt="" class="new__img">
+                                <h3 class="new__price">CEVICHERAS</h3>
+
+                            </article>
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="../static/home_ecomy/img/new4.png" alt="" class="new__img">
+                                <h3 class="new__price">MARISQUERAS</h3>
+
+                            </article>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                        <a href=" {{url_for('.crear_empresa')}} " class="button">
+                            REGISTRAR NUEVA EMPRESA EN ECOMY™
+                        </a>
+                </div> <br>
+                <div>
+                        <a href=" {{url_for('.log')}} " class="button">
+                            INICIAR SESION 
+                        </a>
+                </div>
+            </section>
+
+            <!--==================== MESSAGE ====================-->
+            <section class="message section container">
+                <div class="message__container grid">
+                    <img src="../static/home_ecomy/img/message.png" alt="" class="message__img">
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                
+
+                <div>
+                    <a href=" {{url_for('.home')}} " class="footer__logo">
+                        <img src="../static/home_ecomy/img/logo.png" alt="" class="footer__logo-img"> 
+                        ecomycr™
+                    </a>
+
+                    <p class="footer__description"> "Lo que necesites, te lo llevamos"
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Nuestros servicios</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href=" {{url_for('.marketplace')}} " class="footer__link">Express gratis</a>
+                        </li>
+                        <li>
+                            <a href="{{url_for('.servicios_detallados')}} " class="footer__link">Servicios personalizados</a>
+                        </li>
+                        <li>
+                            <a href="/marketplace#promociones" class="footer__link">Variedad de productos</a>
+                        </li>
+
+
+
+
+                        <li>
+                            <a href="{{url_for('.log')}} " class="footer__link">Ecomy socios™</a>
+                        </li>
+                        <li>
+                            <a href="{{url_for('.log')}} " class="footer__link">Ecomy repartidor™</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Soporte de ayuda</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="/atencion_al_cliente" class="footer__link">Preguntas frecuentes</a>
+                        </li>
+
+                        <li>
+                            <a href="/atencion_al_cliente" class="footer__link">Atencion al cliente</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Disponible en Android & iPhone</h3>
+
+                    <div class="footer__aviables">
+                        <img src="../static/home_ecomy/img/aviable1.png" alt="" class="footer__aviable-img">
+                        <img src="../static/home_ecomy/img/aviable2.png" alt="" class="footer__aviable-img">
+                    </div>
+                </div>
+
+
+                <img src="../static/home_ecomy/img/footer2.png" alt="" class="footer__img2">
+            </div>
+
+            <span class="footer__copy">&#169;ecomycr, inn.   Todos los derechos reservados </span>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="../static/home_ecomy/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="../static/home_ecomy/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="../static/home_ecomy/js/main.js"></script>
+    </body>
+</html>

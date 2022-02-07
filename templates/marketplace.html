@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="../static/marketplace/css/styles.css">
+
+
+
+
+        
+        <title>MarketCom</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header" >
+            <nav class="nav container">
+                <a style="margin-left: 3%; color: #ffffff;  font-weight: bold;" href="{{ url_for('.home') }}" class="nav__logo">ecomycr™</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list" style="margin-right: 2%; margin-left: 4%;" >
+
+                        <li class="nav__item">
+                            <a href="#usuarios" class="nav__link">
+                                <i class='bx bx-user nav__icon'></i>
+                                <span class="nav__name">Usuarios</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#promociones" class="nav__link active-link">
+                                <i class='bx bx-home-alt nav__icon'></i>
+                                <span class="nav__name">Home</span>
+                            </a>
+                        </li>
+                        
+
+                        <li class="nav__item">
+                            <a href="#productos" class="nav__link">
+                                <i class='bx bx-book-alt nav__icon'></i>
+                                <span class="nav__name">Carrito</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            <a style="margin-right: 1.5%;"  href="{{ url_for('.tipo_phone') }}">
+                <img src="../static/marketplace/img/perfil.jpeg" alt="" class="nav__img">
+
+            </a>
+                
+            </nav>
+        </header>
+
+        <main>
+
+            <!--=============== usuarios ===============-->
+            <section class="container section section__height" id="usuarios">
+                <h2 class="section__title">Usuarios promociones y estrellas informacion aqui </h2>
+                <h2 class="section__title">Entrega inmediata</h2>
+                <h2 class="section__title">Lo que se necesite</h2>
+                <h2 class="section__title">Empresas tipos</h2>
+                
+                <a href=" {{url_for('.tipo_phone') }} " class="button">Descargar aplicacion</a>
+            </section>
+
+            <!--=============== promociones ===============-->
+            <section class="container section section__height" id="promociones">
+                <h2 class="section__title">Home page</h2>
+                <a href=" {{url_for('.tipo_phone') }} " class="button">Descargar aplicacion</a>
+            </section>
+
+            <!--=============== productos ===============-->
+            <section class="container section section__height" id="productos">
+                <h2 class="section__title">Carrito</h2>
+                <h2 class="section__title">Metodos de pago</h2>
+
+                <h2 class="section__title">seguridad</h2>
+
+                <h2 class="section__title">tiempo de entrega</h2>
+                <h2 class="section__title">Por servicios brindados</h2>
+
+                <h2 class="section__title">impuestos</h2>
+                <h2 class="section__title">Express  =  0</h2>
+                <h2 class="section__title">Total  = </h2>
+                <h2 class="section__title"></h2>
+                <a href=" {{url_for('.tipo_phone') }} " class="button">Descargar aplicacion</a>
+            </section>
+
+
+            <!--=============== descargas ===============-->
+            <section class="container section section__height" id="descargas">
+                <h2 class="section__title">Descargar aplicacion </h2>
+
+
+                <h2 class="section__title">Icono play store</h2>
+
+                <h2 class="section__title">Icono Apple Store</h2>
+
+
+                <h2 class="section__title">Windows App</h2>
+                
+
+                <a href=" {{url_for('.tipo_phone') }} " class="button">Descargar aplicacion</a>
+            </section>
+
+
+                <!--==================== FOOTER ====================-->
+    <footer class="footer section" style="margin-bottom: 10%;">
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">ecomycr™
+                </a>
+
+                <p class="footer__description"> El delivery de tu preferencia
+                </p>
+            </div>
+
+        </div>
+
+        <span class="footer__copy">&#169; Ecomycr™ Todos los derechos reservados </span>
+    </footer>
+
+    
+        </main>
+        
+
+        <!--=============== MAIN JS ===============-->
+        <script src="../static/marketplace/js/main.js"></script>
+    </body>
+</html>
